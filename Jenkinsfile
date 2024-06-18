@@ -32,7 +32,7 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('https://471112853464.dkr.ecr.ap-south-1.amazonaws.com', 'ecr:us-west-2:aws-credentials') {
-                    app.push("latest")
+                    app.push("deepu-image")
                     }
                 }
             }
